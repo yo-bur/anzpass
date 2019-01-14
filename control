@@ -1,0 +1,9 @@
+Package: com.yobur.anzpass
+Name: ANZpass
+Depends: mobilesubstrate
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Jailbreak detection bypass for the ANZ banking app. Enables Touch ID / Face ID.
+Maintainer: Johann Burgess
+Author: Johann Burgess
+Section: Tweaks
