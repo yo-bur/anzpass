@@ -1,30 +1,30 @@
 // Prevent the ANZ app's jailbreak detection and allow Touch ID/Face ID.
-// Tweak based of Flex patch by ogswank.
+// Tweak based of Flex patch by user ogswank.
 
 %hook ANZJailbreakDetector
 
 - (bool)isDeviceJailBroken {
-    %log; return FALSE;
+    return FALSE;
 }
 
 - (void)setJailbreakSymbolicLinkPaths:(id)arg1 {
-    %log; return;
+    return;
 }
 
 - (void)setJailbreakFilePaths:(id)arg1 {
-    %log; return;
+    return;
 }
 
 - (bool)hasExistanceOfJailbreakFiles {
-    %log; return FALSE;
+    return FALSE;
 }
 
 - (bool)hasSandboxIntegrityBeenCompromised {
-    %log; return FALSE;
+    return FALSE;
 }
 
 - (bool)hasEvidanceOfSymbolicLinking {
-    %log; return FALSE;
+    return FALSE;
 }
 
 %end
@@ -33,11 +33,11 @@
 %hook ANZAggregateRemoteConfig
 
 - (id)jailbreakSymbolicLinkPathsUsedToDetermineIfDeviceIsJailbroken {
-    %log; return NULL;
+    return NULL;
 }
 
 - (id)jailbreakFilesToDetermineIfDeviceIsJailbroken {
-    %log; return NULL;
+    return NULL;
 }
 
 %end
